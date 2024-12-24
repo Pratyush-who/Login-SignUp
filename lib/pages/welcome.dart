@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:just_in_a_blink/widgets/custom_button.dart';
+import 'package:Luffy_Adventure/widgets/custom_button.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -122,13 +122,26 @@ class WelcomePage extends StatelessWidget {
           _infoSubText(context),
           CustomButton(
             height: MediaQuery.sizeOf(context).height * 0.06,
-            width: MediaQuery.sizeOf(context).width*0.7,
-           isPrimary:true,
+            width: MediaQuery.sizeOf(context).width * 0.7,
+            isPrimary: true,
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                "/login",
+              );
+            },
+            text: "Login",
           ),
           CustomButton(
             height: MediaQuery.sizeOf(context).height * 0.06,
-            width: MediaQuery.sizeOf(context).width*0.7,
-           isPrimary:false,
+            width: MediaQuery.sizeOf(context).width * 0.7,
+            isPrimary: false,
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                "/signup",
+              );},
+            text: "Sign-up",
           ),
         ],
       ),
