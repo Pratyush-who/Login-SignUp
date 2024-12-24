@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:Luffy_Adventure/pages/login.dart';
 import 'package:Luffy_Adventure/pages/welcome.dart';
+import 'package:Luffy_Adventure/pages/signup.dart';
+
 
 void main() {
   runApp(const MainApp());
@@ -32,6 +34,7 @@ class MainApp extends StatelessWidget {
       routes: {
         "/welcome": (context) => WelcomePage(),
         "/login": (context) => LoginPage(),
+        "/signup": (context) => SignUpPage(),
       },
     );
   }
