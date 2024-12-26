@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:Luffy_Adventure/pages/login.dart';
+import 'package:Luffy_Adventure/pages/splash.dart'; 
 import 'package:Luffy_Adventure/pages/welcome.dart';
 import 'package:Luffy_Adventure/pages/signup.dart';
 
@@ -30,8 +31,9 @@ class MainApp extends StatelessWidget {
         useMaterial3: true,
         textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      initialRoute: "/welcome",
+      initialRoute: "/Splash", // Set initial route to Splash
       routes: {
+        "/Splash": (context) => const SplashScreen(),
         "/welcome": (context) => WelcomePage(),
         "/login": (context) => LoginPage(),
         "/signup": (context) => SignUpPage(),
